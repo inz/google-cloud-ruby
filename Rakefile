@@ -576,7 +576,7 @@ task :one_local_cloudrad_docs, [:gem] do |t, args|
       ENV.delete "GOOGLE_APPLICATION_CREDENTIALS"
       opts = [
         "--credentials=''",
-        "--staging-bucket=#{ENV.fetch 'V2_STAGING_BUCKET', 'docs-staging-v2-dev'}",
+        "--staging-bucket=#{ENV.fetch 'V2_STAGING_BUCKET', 'docs-staging-v2'}",
         "--metadata-file=./docs.metadata",
         "--destination-prefix docfx"
       ]
